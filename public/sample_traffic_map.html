@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d392c278500fd0fddb2d3ef3b0e4d0cf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d392c278500fd0fddb2d3ef3b0e4d0cf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d392c278500fd0fddb2d3ef3b0e4d0cf = L.map(
+                "map_d392c278500fd0fddb2d3ef3b0e4d0cf",
+                {
+                    center: [28.6139, 77.209],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eece1415d85983bfb5a839270292aa22 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_eece1415d85983bfb5a839270292aa22.addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+            var circle_marker_b95346ee738e0824e9b813a146b5124c = L.circleMarker(
+                [28.609818778431546, 77.20334839315662],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_5241cddd3a339063e5f123a506f9ffae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_55c94875c0ef30fd07caf5a0f2425e05 = $(`<div id="html_55c94875c0ef30fd07caf5a0f2425e05" style="width: 100.0%; height: 100.0%;">Traffic: Medium (19 vehicles)</div>`)[0];
+                popup_5241cddd3a339063e5f123a506f9ffae.setContent(html_55c94875c0ef30fd07caf5a0f2425e05);
+            
+        
+
+        circle_marker_b95346ee738e0824e9b813a146b5124c.bindPopup(popup_5241cddd3a339063e5f123a506f9ffae)
+        ;
+
+        
+    
+    
+            var circle_marker_2da16eaefe22bb46a4c6bfdf455d3787 = L.circleMarker(
+                [28.616928698303333, 77.19979550488763],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_4ab49b6f899361fbcb15750fbb4981ea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76fe727a60b028dbda1af0138c8d68ac = $(`<div id="html_76fe727a60b028dbda1af0138c8d68ac" style="width: 100.0%; height: 100.0%;">Traffic: High (36 vehicles)</div>`)[0];
+                popup_4ab49b6f899361fbcb15750fbb4981ea.setContent(html_76fe727a60b028dbda1af0138c8d68ac);
+            
+        
+
+        circle_marker_2da16eaefe22bb46a4c6bfdf455d3787.bindPopup(popup_4ab49b6f899361fbcb15750fbb4981ea)
+        ;
+
+        
+    
+    
+            var circle_marker_7f9b7e3738ee7e050aa8d0fb925a0c98 = L.circleMarker(
+                [28.618978041067418, 77.21794093024043],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_3d3f97419b7d4c2dec1c2630533ce550 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_960a225f61973df3326054831e328198 = $(`<div id="html_960a225f61973df3326054831e328198" style="width: 100.0%; height: 100.0%;">Traffic: Low (8 vehicles)</div>`)[0];
+                popup_3d3f97419b7d4c2dec1c2630533ce550.setContent(html_960a225f61973df3326054831e328198);
+            
+        
+
+        circle_marker_7f9b7e3738ee7e050aa8d0fb925a0c98.bindPopup(popup_3d3f97419b7d4c2dec1c2630533ce550)
+        ;
+
+        
+    
+    
+            var circle_marker_cdad43514c4932743f08a5089b5c4835 = L.circleMarker(
+                [28.61129270673833, 77.2083696810619],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_83e921d65b152222f4db86ef49a0b810 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7250b7caa6f312c709cd0ef6ea5280fa = $(`<div id="html_7250b7caa6f312c709cd0ef6ea5280fa" style="width: 100.0%; height: 100.0%;">Traffic: Medium (15 vehicles)</div>`)[0];
+                popup_83e921d65b152222f4db86ef49a0b810.setContent(html_7250b7caa6f312c709cd0ef6ea5280fa);
+            
+        
+
+        circle_marker_cdad43514c4932743f08a5089b5c4835.bindPopup(popup_83e921d65b152222f4db86ef49a0b810)
+        ;
+
+        
+    
+    
+            var circle_marker_d1de3aa267da6e876d0e58db644a9977 = L.circleMarker(
+                [28.623825464390222, 77.21331003448303],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_a6b3085e26ef24407d729a0a728beeb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a790f19c44b90e47b5be5cd55bdcb510 = $(`<div id="html_a790f19c44b90e47b5be5cd55bdcb510" style="width: 100.0%; height: 100.0%;">Traffic: High (40 vehicles)</div>`)[0];
+                popup_a6b3085e26ef24407d729a0a728beeb3.setContent(html_a790f19c44b90e47b5be5cd55bdcb510);
+            
+        
+
+        circle_marker_d1de3aa267da6e876d0e58db644a9977.bindPopup(popup_a6b3085e26ef24407d729a0a728beeb3)
+        ;
+
+        
+    
+    
+            var circle_marker_2ecc88bbb38dcae6a07896f8fb8e5485 = L.circleMarker(
+                [28.60662354225324, 77.2121060419598],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_9dbb1d6067bdb5da2e0e445a970b9b2f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_011662e7272c909651fd770fe36c7e4d = $(`<div id="html_011662e7272c909651fd770fe36c7e4d" style="width: 100.0%; height: 100.0%;">Traffic: High (34 vehicles)</div>`)[0];
+                popup_9dbb1d6067bdb5da2e0e445a970b9b2f.setContent(html_011662e7272c909651fd770fe36c7e4d);
+            
+        
+
+        circle_marker_2ecc88bbb38dcae6a07896f8fb8e5485.bindPopup(popup_9dbb1d6067bdb5da2e0e445a970b9b2f)
+        ;
+
+        
+    
+    
+            var circle_marker_087167724eb288186623ec51da03aca3 = L.circleMarker(
+                [28.61070766569559, 77.21093874907766],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_19eb42fe1bbf368b6fe59cba6d2e257f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c553e45e86a0a02a09652cc85d63f64a = $(`<div id="html_c553e45e86a0a02a09652cc85d63f64a" style="width: 100.0%; height: 100.0%;">Traffic: High (48 vehicles)</div>`)[0];
+                popup_19eb42fe1bbf368b6fe59cba6d2e257f.setContent(html_c553e45e86a0a02a09652cc85d63f64a);
+            
+        
+
+        circle_marker_087167724eb288186623ec51da03aca3.bindPopup(popup_19eb42fe1bbf368b6fe59cba6d2e257f)
+        ;
+
+        
+    
+    
+            var circle_marker_29bbaf6bda92adaad57034258fb43305 = L.circleMarker(
+                [28.622251560658462, 77.21302588331127],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_2a4f17845ba4019d99169b999572d745 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be3cdbb51805d22e786708a1eec8ce30 = $(`<div id="html_be3cdbb51805d22e786708a1eec8ce30" style="width: 100.0%; height: 100.0%;">Traffic: High (30 vehicles)</div>`)[0];
+                popup_2a4f17845ba4019d99169b999572d745.setContent(html_be3cdbb51805d22e786708a1eec8ce30);
+            
+        
+
+        circle_marker_29bbaf6bda92adaad57034258fb43305.bindPopup(popup_2a4f17845ba4019d99169b999572d745)
+        ;
+
+        
+    
+    
+            var circle_marker_e2d0eda996903c5e9350d7981f0b5146 = L.circleMarker(
+                [28.62384566126908, 77.20320862770706],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_4187e9634e4a7821a4177960b5e92a0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6afff0a8759610272bc90a7c3fd9e993 = $(`<div id="html_6afff0a8759610272bc90a7c3fd9e993" style="width: 100.0%; height: 100.0%;">Traffic: High (48 vehicles)</div>`)[0];
+                popup_4187e9634e4a7821a4177960b5e92a0e.setContent(html_6afff0a8759610272bc90a7c3fd9e993);
+            
+        
+
+        circle_marker_e2d0eda996903c5e9350d7981f0b5146.bindPopup(popup_4187e9634e4a7821a4177960b5e92a0e)
+        ;
+
+        
+    
+    
+            var circle_marker_c363c40945a245961528b1c6d1d8583a = L.circleMarker(
+                [28.62055367933571, 77.20810584891397],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_8f1137985ebe7f7a6677266f0877b40d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d96e93cdda025dc3c2b43d476d28aa2 = $(`<div id="html_6d96e93cdda025dc3c2b43d476d28aa2" style="width: 100.0%; height: 100.0%;">Traffic: Medium (29 vehicles)</div>`)[0];
+                popup_8f1137985ebe7f7a6677266f0877b40d.setContent(html_6d96e93cdda025dc3c2b43d476d28aa2);
+            
+        
+
+        circle_marker_c363c40945a245961528b1c6d1d8583a.bindPopup(popup_8f1137985ebe7f7a6677266f0877b40d)
+        ;
+
+        
+    
+    
+            var circle_marker_2eefd8eeca46b793d28580d382ca9f61 = L.circleMarker(
+                [28.62195711741348, 77.20344894901876],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_db13c2e6348fd5777be7bca6708c0da6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5be15c21c01758ee3070f226e4fda1d1 = $(`<div id="html_5be15c21c01758ee3070f226e4fda1d1" style="width: 100.0%; height: 100.0%;">Traffic: Medium (28 vehicles)</div>`)[0];
+                popup_db13c2e6348fd5777be7bca6708c0da6.setContent(html_5be15c21c01758ee3070f226e4fda1d1);
+            
+        
+
+        circle_marker_2eefd8eeca46b793d28580d382ca9f61.bindPopup(popup_db13c2e6348fd5777be7bca6708c0da6)
+        ;
+
+        
+    
+    
+            var circle_marker_7dc4cc7cfd8c8e82a2e758b6b7b0ee68 = L.circleMarker(
+                [28.62089151678058, 77.21614125509882],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_96e1836467e569e0fc229d1201e6e3b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14fa645e71e207b3806fca0b3615425f = $(`<div id="html_14fa645e71e207b3806fca0b3615425f" style="width: 100.0%; height: 100.0%;">Traffic: High (36 vehicles)</div>`)[0];
+                popup_96e1836467e569e0fc229d1201e6e3b5.setContent(html_14fa645e71e207b3806fca0b3615425f);
+            
+        
+
+        circle_marker_7dc4cc7cfd8c8e82a2e758b6b7b0ee68.bindPopup(popup_96e1836467e569e0fc229d1201e6e3b5)
+        ;
+
+        
+    
+    
+            var circle_marker_eef0548ab700f389461602c15e183d56 = L.circleMarker(
+                [28.605112252044574, 77.2137900822218],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_25d3ffb2ab27894e978dbdd21f85488b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f948da11a06dbbea7881faa6f9125e0f = $(`<div id="html_f948da11a06dbbea7881faa6f9125e0f" style="width: 100.0%; height: 100.0%;">Traffic: Medium (23 vehicles)</div>`)[0];
+                popup_25d3ffb2ab27894e978dbdd21f85488b.setContent(html_f948da11a06dbbea7881faa6f9125e0f);
+            
+        
+
+        circle_marker_eef0548ab700f389461602c15e183d56.bindPopup(popup_25d3ffb2ab27894e978dbdd21f85488b)
+        ;
+
+        
+    
+    
+            var circle_marker_bf3073b4db3d900959b7177bd374174c = L.circleMarker(
+                [28.60966785430418, 77.20233669006787],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_24d2ea5494be4bae4e52bcae9556d146 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6d598f8217133d2cd7765c663189e44 = $(`<div id="html_b6d598f8217133d2cd7765c663189e44" style="width: 100.0%; height: 100.0%;">Traffic: High (39 vehicles)</div>`)[0];
+                popup_24d2ea5494be4bae4e52bcae9556d146.setContent(html_b6d598f8217133d2cd7765c663189e44);
+            
+        
+
+        circle_marker_bf3073b4db3d900959b7177bd374174c.bindPopup(popup_24d2ea5494be4bae4e52bcae9556d146)
+        ;
+
+        
+    
+    
+            var circle_marker_3de77a9a8626a867af3f042c61a002da = L.circleMarker(
+                [28.620422296849956, 77.2161984624613],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_d392c278500fd0fddb2d3ef3b0e4d0cf);
+        
+    
+        var popup_7710ef0e0aa4047a6012d95f6dd152dd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba26433c5bb2659e5fe2117fa6e9dc86 = $(`<div id="html_ba26433c5bb2659e5fe2117fa6e9dc86" style="width: 100.0%; height: 100.0%;">Traffic: Medium (15 vehicles)</div>`)[0];
+                popup_7710ef0e0aa4047a6012d95f6dd152dd.setContent(html_ba26433c5bb2659e5fe2117fa6e9dc86);
+            
+        
+
+        circle_marker_3de77a9a8626a867af3f042c61a002da.bindPopup(popup_7710ef0e0aa4047a6012d95f6dd152dd)
+        ;
+
+        
+    
+</script>
+</html>
