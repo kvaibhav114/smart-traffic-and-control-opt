@@ -20,9 +20,6 @@ A real-time web-based traffic monitoring system designed to efficiently track, d
 - **Frontend**: React, TailwindCSS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **APIs**: (Add your data/API source here)
-- **Authentication**: (If applicable)
-- **Deployment**: (Netlify / Vercel / Render / Railway / Heroku)
 
 ---
 
